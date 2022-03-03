@@ -1,0 +1,27 @@
+
+<div class="training">
+    <div class="training__header">
+        <h2 class="training__title section-title">Тренинги и мероприятия</h2>
+        <a class="training__header-link header-link header-link--white" href="#">
+            Все <span>&nbsp; события</span>
+            <svg>
+                <use xlink:href="#slider-arrow"></use>
+            </svg>
+        </a>
+    </div>
+    <ul class="training__list">
+        {{#each trainings}}
+            <li>
+                <a class="training__item" href="#">
+                    <div class="training__block-time">
+                        <time class="training__item-date" datetime="2021-09-15">{{this.date}}</time>
+                        <span>{{this.time}}</span>
+                    </div>
+                    <p>{{this.theme}}</p>
+                    <span>{{this.communication}}</span>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+    {{> recording }}
+</div>

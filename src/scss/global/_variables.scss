@@ -1,0 +1,58 @@
+:root {
+    --dark: #202226;
+    --easy-dark: #353940;
+    --secondary-dark: rgba(88, 95, 103, 1);
+    --green: #91F49A;
+  
+    --grey: #B9BCC1;
+    --border-grey: #dbdee5;
+    --light-grey: #F4F5F8;
+    --focus-grey: #DBDEE6;
+    --focus2-grey: #DBDEE5;
+    --jack-grey: #5B5E66;
+  
+    // todo: здесь после мерджа совпали названия. У Альберта в файлах ссылки на grey нужно поменять
+    // --grey: #5B5E66;
+  
+    --secondary-grey: #E6E6E6;
+    --secondary-light: #F6F6F6;
+    --black: #222E3C;
+    --secondary: #E9D0AC;
+    --white: #FFF;
+    --success: #349C6A;
+    --error: #DB4444;
+    --bg-success: #E4F8EE;
+    --bg-error: #FFE2E2;
+    --green-baner: #DDF0ED;
+  
+    --wide-max-container-width: 158.4rem;
+    --wide-content-padding: 0.8rem;
+    --max-container-width: 148rem;
+    --content-padding: 6rem;
+  
+    --primary-color: var(--secondary);
+    --text-color: var(--dark);
+  
+    --youtube-icon-color: var(--primary-color);
+  }
+  
+  @include breakpoint(tablet) {
+    :root{
+      --content-padding: 4rem;
+    }
+  }
+  @include breakpoint(mobile) {
+    :root{
+    --content-padding: 2rem;
+      --wide-content-padding: 0.4rem;
+  }
+  }
+  
+  $minWidth: 360;
+  $maxWidth: 1600; // Ширина макета
+  $base-transition-time: 0.3s;
+  $base-transition-easing: ease;
+  
+  $overlay-color: rgba(0, 0, 0, 0.5);
+  
+  $modal-bg-color: white;

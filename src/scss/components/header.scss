@@ -1,0 +1,224 @@
+.header {
+    position: relative;
+    
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      height: 10.4rem;
+      padding: 2.4rem 0;
+  
+      border-bottom: 1px solid #DBDEE5;
+      
+      @media (max-width: 768px) {
+        align-items: center;
+        height: 6.4rem;
+        padding: 2rem 0;
+      }
+    }
+  
+    &__burger {
+      display: none;
+  
+      span, &::before, &::after {
+        height: 0.2rem;
+        background-color: var(--dark);
+      }
+  
+      span {
+        width: 2.2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+  
+      &::before {
+        content: '';
+        width: 2rem;
+      }
+  
+      &::after {
+        content: '';
+        width: 1.4rem;
+      }
+      
+      @media (max-width: 1170px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: center;
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  
+    &__logo {
+      align-self: center;
+  
+      @media (max-width: 768px) {
+        max-width: 15rem;
+      }
+  
+      @media (max-width: 360px) {
+      max-width: 9.8rem;
+    }
+    }
+  
+    &__search {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      max-width: 98.6rem;
+      margin-right: auto;
+      margin-left: 5.8rem;
+  
+      @media (max-width: 1170px) {
+        display: none;
+      }
+    }
+  
+    &__user-navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8.8rem;
+      margin-left: 2rem;
+  
+      border: 1px solid rgba(32, 34, 38, .2);
+      border-radius: 10rem;
+  
+      transition: 0.4s;
+  
+      &:hover {
+        background: #ccc;
+  
+        svg {
+          fill: #fff;
+        }
+      }
+  
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+  
+      }
+      
+      @media (max-width: 768px) {
+        width: auto;
+        border: none;
+      }
+    }
+  
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      height: 8rem;
+      padding: 2.7rem 0;
+  
+      @media (max-width: 1170px) {
+        padding: 2rem 0;
+      }
+    }
+    
+    &__bottom-search {
+      display: none;
+  
+      @media (max-width: 1170px) {
+        display: block;
+        margin-left: 0.8rem;
+        flex-grow: 1;
+      }
+    }
+  
+    &__menu {
+      @media (max-width: 1170px) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        z-index: 99;
+      }
+    }
+  
+    &__menu-list {
+      position: relative;
+  
+      display: flex;
+      align-items: center;
+  
+      @media (max-width: 1170px) {
+        background: #e5e5e5;
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  
+    &__menu-item {
+  
+      @extend %fs-h5;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+  
+      @media (max-width: 1170px) {
+        padding: 1rem 0;
+        margin-right: 0;
+        border: 1px solid #ccc;
+  
+        text-align: center;
+      }
+    }
+  
+    &__menu-link {
+      display: block;
+      padding-right: 4.8rem;
+  
+      transition: 0.4s;
+  
+      @media (max-width: 1400px) {
+        padding-right: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  
+    &__menu-scroll {
+      position: absolute;
+      left: 0;
+      top: -3rem;
+  
+      width: 18.9rem;
+      height: 0.5rem;
+      
+      border-radius: 0.3rem;
+      background: linear-gradient(90deg, #B659FF 0%, #99F5A2 49.42%, #79DFFF 100%);
+  
+      transition: 0.4s;
+    }
+  
+    &__language {
+      @media (max-width: 1170px) {
+        display: none;
+      }
+    }
+  
+    &__burger-2 {
+      display: none;
+  
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+  
+      @media (max-width: 1170px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+  
+        border-radius: 0.8rem;
+        background-color: var(--dark);
+      }
+    }
+  }

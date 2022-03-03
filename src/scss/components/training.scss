@@ -1,0 +1,126 @@
+.training {
+    padding-bottom: 6rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        @media (max-width: 540px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        margin: 0;
+
+        @media (max-width: 540px) {
+            max-width: 19rem;
+        }
+    }
+
+    &__header-link {
+        span {
+            @media (max-width: 540px) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        display: grid;
+        gap: 4rem;
+        align-items: flex-start;
+        grid-template-columns: 28rem 1fr 16rem;
+        padding: 4rem 0;
+
+        border: 1px solid rgba(255, 255, 255, 0.37);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+        @media (max-width: 1000px) {
+            gap: 2.5rem;
+        }
+        
+        @media (max-width: 940px) {
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+            padding: 2rem 0;
+        }
+
+        span, .training__item-date {
+            margin-top: 0.4rem;
+
+            font-size: 1.8rem;
+            line-height: 1.3;
+            color: rgba(255, 255, 255, 0.75);
+
+            @media (max-width: 540px) {
+                font-size: 1.4rem;
+            }
+        }
+
+        span:last-of-type {
+            text-align: right;
+
+            @media (max-width: 940px) {
+                text-align: left;
+            }
+        }
+
+        p {
+            max-width: 72.2rem;
+            margin-right: auto;
+            padding-left: 4.4rem;
+
+            font-size: 2.4rem;
+            line-height: 1.2;
+
+            @media (max-width: 1160px) {
+                padding-left: 0;
+            }
+
+            @media (max-width: 540px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__block-time {
+        display: flex;
+        gap: 4rem;
+
+        @media (max-width: 1000px) {
+            gap: 2.5rem;
+        }
+
+        @media (max-width: 940px) {
+            gap: 1.6rem;
+        }
+    }
+
+    &__item-date {
+        display: flex;
+        align-items: center;
+
+
+        &::before {
+            content: '';
+
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-right: 1.2rem;
+
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.63);
+
+            @media (max-width: 540px) {
+                width: 0.8rem;
+                height: 0.8rem;
+                margin-right: 0.8rem;
+            }
+        }
+    }
+}

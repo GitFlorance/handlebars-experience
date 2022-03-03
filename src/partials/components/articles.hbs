@@ -1,0 +1,30 @@
+<div class="articles">
+    <div class="articles__header">
+        <h3 class="articles__title section-title">Обзоры и статьи</h3>
+        <a class="articles__header-link header-link header-link--white" href="#">
+            Смотреть все
+            <svg>
+                <use xlink:href="#slider-arrow"></use>
+            </svg>
+        </a>
+    </div>
+    <ul class="articles__list">
+        {{#each articles}}
+            <li>
+                <a class="articles__item" href="#">
+                    <div class="articles__item-content">
+                        <div class="articles__item-header">
+                            <time class="articles__item-date" datetime="2021-09-15">{{this.date}}</time>
+                            <span>{{this.category}}</span>
+                        </div>
+                        <h4>{{this.title}}</h4>
+                    </div>
+                    <div class="articles__item-img">
+                        <img src="{{this.image}}" alt="Фото статьи">
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+
+    </ul>
+</div>

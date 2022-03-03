@@ -1,0 +1,77 @@
+<footer class="footer">
+    <div class="wide-container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__letter">
+                    <div class="footer__letter-icon">
+                        <svg>
+                            <use xlink:href="#letter"></use>
+                        </svg>
+                    </div>
+                    <p>Присылаем только интересное и важное</p>
+                </div>
+                <form class="footer__letter-form">
+                    <label class="visually-hidden" for="letterFormMail">Напишите свою почту</label>
+                    <input class="footer__letter-input" type="email" name="letterFormMail" id="letterFormMail" placeholder="top-seller@sony-russia.com">
+                    <button class="footer__letter-button button button--white">
+                        <span>Отправить</span>
+                        <svg>
+                            <use xlink:href="#letter-arrow"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__middle-top-wrapper">
+                    <a class="footer__logo" href="#">
+                        <img src="img/logo-light.svg" alt="Логотип auvix">
+                    </a>
+                    <ul class="footer__social-list">
+                        {{#each socials }}
+                        <li>
+                            <div class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <svg>
+                                        <use xlink:href="#{{this.icon}}"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="footer__middle-bottom-wrapper">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            {{#each navList}}
+                                <li class="js-accordion js-accordion-tablet" data-close-other="true">
+                                    <h3 class="footer__nav-main-link js-accordion-btn">
+                                        {{this.mainLink}}
+                                        <svg>
+                                            <use xlink:href="#slider-arrow"></use>
+                                        </svg>
+                                    </h3>
+                                    <ul class="footer__nav-sublist js-accordion-content">
+                                        {{#each this.links}}
+                                            <li>
+                                                <a class="footer__nav-link" href="#">{{this}}</a>
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a class="footer__contacts-phone" href="tel:84957975775">+7 (495) 797-57-75</a>
+                        <address class="footer__contacts-address">129085, г. Москва, Звездный бульвар, д. 21, корп. 1</address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copyright">©1993 – 2021 AUVIX </span>
+                <span class="footer__made">Сделано в AIC</span>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,25 @@
+
+{{#if socials}}
+
+<ul class="socials">
+  {{#each socials}}
+  <li class="socials__item">
+    <a class="socials__item-link" href="{{this.link}}" title="{{this.name}}" target="_blank">
+      <svg><use xlink:href="{{this.icon}}"></svg>
+    </a>
+  </li>
+  {{/each}}
+</ul>
+
+{{else}}
+<pre>
+  Добавить в файл json:
+  "socials": [
+    {
+      "name": "",
+      "icon": "",
+      "link": ""
+    }
+  ]
+</pre>
+{{/if}}

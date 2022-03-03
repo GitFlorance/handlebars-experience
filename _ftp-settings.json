@@ -1,0 +1,7 @@
+{
+    "host": "example.com",
+    "user": "1234",
+    "pass": "******",
+    "parallel": 10,
+    "_dest": "public_html/"
+  }

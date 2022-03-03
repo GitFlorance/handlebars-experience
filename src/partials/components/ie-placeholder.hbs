@@ -1,0 +1,32 @@
+<style>
+    .ie-placeholder {
+        z-index: 4000;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #202020;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .ie-placeholder__message {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 500;
+        margin: auto;
+    }
+    @supports (display: grid) {
+        .ie-placeholder {
+            display: none;
+        }
+    }
+</style>
+<div class="ie-placeholder">
+    <div class="ie-placeholder__message">
+        Извините, ваш браузер не поддерживается
+    </div>
+</div>

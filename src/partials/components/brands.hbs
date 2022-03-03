@@ -1,0 +1,32 @@
+<section class="brands{{#if mods}} {{mods}}{{/if}}">
+    <div class="brands__inner">
+        <div class="container">
+            <div class="brands__slider swiper-container js-init-slider" data-slides="auto"  data-loop="true" data-space="4">
+                <ul class="brands__slider-wrapper swiper-wrapper">
+                    {{#each data}}
+                        <li class="brands__item swiper-slide">
+                            <a class="brands__link" href="{{this.link}}" target="_blank">
+                                <img class="brands__img" src="{{this.image}}" alt="Фото слайдера">
+                            </a>
+                            {{#if this.label}}
+                                <a class="brands__title" href="this.link" title="Перейти на странице товара">{{this.label}}</a>
+                            {{/if}}
+                        </li>
+                    {{/each}}
+                </ul>
+                <div class="js-slider-navigation">
+                    <button class="brands__slider-button brands__slider-button--next js-next-slide" title="Листнуть вправо">
+                        <svg>
+                            <use xlink:href="#slider-arrow"/>
+                        </svg>
+                    </button>
+                    <button class="brands__slider-button brands__slider-button--prev js-prev-slide" title="Листнуть влево">
+                        <svg>
+                            <use xlink:href="#slider-arrow"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

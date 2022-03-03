@@ -1,0 +1,28 @@
+<section class="news">
+    <div class="container">
+        <div class="news__header">
+            <h2 class="news__title section-title">Новости</h2>
+            <a class="news__header-link header-link" href="#">
+                <span>Все новости</span>
+                <svg>
+                    <use xlink:href="#slider-arrow"/>
+                </svg>
+            </a>
+        </div>
+        <ul class="news__list">
+            {{#each news}}
+            <li>
+                <a class="news__item" href="#">
+                    <div class="news__item-content">
+                        <time class="news__item-time" datetime="2021-09-21">{{this.time}}</time>
+                        <p>{{this.text}}</p>
+                    </div>
+                    <div class="news__item-img">
+                        <img src="{{this.image}}" alt="Фото новости">
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

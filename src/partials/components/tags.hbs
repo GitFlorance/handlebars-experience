@@ -1,0 +1,12 @@
+<section class="tags container js-unhide-tags-container">
+    <h2 class="tags__title">Популярные теги</h2>
+    <ul class="tags__list">
+        {{#each tags}} 
+                <li class="tags__item" href="#">{{this}}</li>  
+        {{/each}} 
+        <button class="tags__item tags__button" type="button"> 
+            <span> еще </span>
+            <svg><use xlink:href="#slider-arrow"/></svg>
+        </button>
+    </ul>
+</section> 

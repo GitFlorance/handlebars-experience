@@ -1,0 +1,34 @@
+@import './global/fonts';
+@import './global/vendor';
+@import './global/mixins';
+@import './global/variables';
+@import './global/extends';
+@import './global/global';
+@import './global/layout';
+
+@import './components/search';
+@import './components/form-subsribe';
+@import './components/language';
+@import './components/header';
+@import "./components/navigation";
+
+@import './components/tags';
+@import './components/product-card';
+
+@import './components/promotion';
+@import "./components/brands";
+@import "./components/stats";
+@import "./components/products";
+@import "./components/news";
+@import "./components/academy";
+@import "./components/training";
+@import "./components/articles";
+@import "./components/recording";
+@import "./components/application";
+
+@import './components/footer';
+@import './components/accordion';
+@import './components/socials';
+@import './components/logo';
+@import './components/menu';
+@import './components/modal';

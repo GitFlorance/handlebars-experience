@@ -1,0 +1,6 @@
+.logo {
+    &:focus-visible {
+      outline: 1px dotted var(--primary-color);
+      outline-offset: 4px;
+    }
+  }

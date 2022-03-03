@@ -1,0 +1,46 @@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                </a>
+                <div class="header__search">
+                    {{> search }}
+                </div>
+                <button class="header__user-navigation" type="button">
+                    <svg>
+                        <use xlink:href="#user-navigation"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        {{#each menu}}
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">{{this}}</a>
+                            </li>
+                        {{/each}}
+                        <li class="header__menu-scroll"></li>
+                    </ul>
+                    {{> navigation }}
+                </nav>
+                <div class="header__language">
+                    {{> language }}
+                </div>
+                <div class="header__burger-2">
+                    <svg>
+                        <use xlink:href="#burger-2"/>
+                    </svg>
+                </div>
+                <div class="header__bottom-search">
+                    {{> search }}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

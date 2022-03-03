@@ -1,0 +1,57 @@
+<section class="product">
+    <div class="container">
+        <div class="product__title">
+            <span>Результаты по тегу</span>
+            <div class="product__title-item">
+                <h1>Проекционные экраны</h1>
+                <span>3</span>
+            </div>
+        </div> 
+        <ul>
+            {{#each productCard}}
+                {{#if this.banner}} 
+                    <li>
+                        <form class="form-subsribe">
+                            <span>{{name-1}}</span>
+                            <div class="form-subsribe__form">
+                                <input class="form-subsribe__form-item" type="email" placeholder="Адрес почты">
+                                <button class="form-subsribe__form-button-two" type="submit"></button>
+                                <button class="form-subsribe__form-button" type="submit">Отправить</button>
+                            </div>
+                            <img src="../img/mail-billboard.svg">
+                        </form>
+                    </li>
+                {{else}}
+                    <li class="product__list">
+                        <img class="product__image" src={{img}} alt="product-1">
+                        <div class="product__description">
+                            <div class="product__description-header">
+                                <div class="product__description-date">                      
+                                    <time datetime="{{date}}">{{date}}</time>
+                                    <time datetime="{{time}}">{{time}}</time>
+                                </div>
+                                <span class="product__description-activity">{{activity}}</span>
+                            </div>
+                            <div class="product__description-name">
+                                <span>{{name}}</span>
+                            </div>
+                            <div class="product__footer">
+                                <ul class="product__footer-tags">
+                                    {{#each tags}}
+                                        <li>
+                                            <a class="product__footer-item" href="#">{{this}}</a>
+                                        </li>
+                                    {{/each}}
+                                </ul> 
+                                <button class="product__footer-registration" type="button">
+                                    <span>Регистрация</span>
+                                    <svg><use xlink:href="#slider-arrow"/></svg>
+                                </button>  
+                            </div>
+                        </div>
+                    </li>
+                {{/if}}
+            {{/each}} 
+        </ul>
+    </div>
+</section>  

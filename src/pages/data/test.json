@@ -1,0 +1,97 @@
+{
+    "title": "Тестовая страница",
+    "menu": [
+      {
+        "name": "Главная",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Каталог",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Галерея",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Калькулятор",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "О нас",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Контакты",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Отзывы",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Услуги",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Новости",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Статьи",
+        "link": "#",
+        "active": ""
+      },
+      {
+        "name": "Тестовая страница",
+        "link": "/test.html",
+        "active": "y"
+      }
+    ],
+    "socials": [
+      {
+        "name": "Telegram",
+        "icon": "#telegram",
+        "link": "#"
+      },
+      {
+        "name": "Instagram",
+        "icon": "#instagram",
+        "link": "#"
+      },
+      {
+        "name": "VK",
+        "icon": "#vk",
+        "link": "#"
+      },
+      {
+        "name": "Facebook",
+        "icon": "#facebook",
+        "link": "#"
+      },
+      {
+        "name": "WhatsApp",
+        "icon": "#whatsapp",
+        "link": "#"
+      },
+      {
+        "name": "YouTube",
+        "icon": "#youtube",
+        "link": "#"
+      },
+      {
+        "name": "Twitter",
+        "icon": "#twitter",
+        "link": "#"
+      }
+    ]
+  }

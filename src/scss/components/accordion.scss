@@ -1,0 +1,48 @@
+.accordion-item {
+    border-bottom: solid 0.1rem var(--text-color);
+  
+    &:first-of-type {
+      border-top: solid 0.1rem var(--text-color);
+    }
+  
+    &.active {
+      .accordion-item__btn-label {
+        color: var(--light-grey);
+      }
+  
+      .accordion-item__btn-icon {
+        fill: var(--primary-color);
+        transform: rotate(180deg);
+      }
+    }
+  
+    &__btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      padding: 1rem 0;
+  
+      cursor: pointer;
+      user-select: none;
+    }
+  
+    &__btn-label {
+      transition: color $base-transition-time $base-transition-easing;
+    }
+  
+    &__btn-icon {
+      width: 12px;
+      height: 7px;
+  
+      transition: transform $base-transition-time $base-transition-easing, fill $base-transition-time $base-transition-easing;
+    }
+  
+    &__content-container {
+      overflow: hidden;
+    }
+  
+    &__content {
+      padding: 1rem 0;
+    }
+  }

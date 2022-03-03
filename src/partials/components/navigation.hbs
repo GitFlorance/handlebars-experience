@@ -1,0 +1,182 @@
+<ul class="navigation">
+    <li>
+        <div class="container">
+            <ul class="navigation__category">
+                {{#each category}}
+                    <li>
+                        <a class="navigation__category-item" href="#">
+                            <div class="navigation__category-item-icon">
+                                <svg>
+                                    <use xlink:href="#{{this.icon}}"></use>
+                                </svg>
+                            </div>
+                            <span>{{this.name}}</span>
+                        </a>
+                    </li>
+                {{/each}}
+            </ul>
+            <ul class="navigation__subcategory">
+                {{#each subcategory}}
+                    <li>
+                        <a class="navigation__subcategory-item" href="#">{{this}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </li>
+    <li>
+        <div class="container">
+            <div class="navigation__inner">
+                <ul class="navigation__inner-list">
+                    {{#each solutions}}
+                        <li>
+                            <a class="navigation__inner-item" href="#">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="navigation__post" href="#">
+                    <div class="navigation__post-content">
+                        <ul class="navigation__tags">
+                            <li>
+                                <span class="navigation__tags-time">2020</span>
+                                <span class="navigation__tags-category">Интеграция</span>
+                            </li>
+                        </ul>
+                        <div class="navigation__post-text">
+                            <p>
+                                Интегрированное аудиовизуальное решение
+                                для Галереи «Времена года»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="navigation__post-img">
+                        <img src="img/navigation-1.jpg" alt="Фото поста">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="container">
+            <div class="navigation__inner">
+                <ul class="navigation__inner-list">
+                    {{#each techServices}}
+                        <li>
+                            <a class="navigation__inner-item" href="#">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="navigation__large-link" href="#">
+                    <div class="navigation__link-content">
+                        <h3 class="navigation__link-title">Инженерные услуги</h3>
+                        <p>
+                            Комплексное оснащение объектов профессиональным AV-оборудованием
+                        </p>
+                    </div>
+                    <span class="navigation__link-more" href="#">
+                        Подробнее
+                        <svg>
+                            <use xlink:href="#slider-arrow"></use>
+                        </svg>
+                    </span>
+                    <svg class="navigation__link-icon">
+                        <use xlink:href="#navigation-link"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="container">
+            <div class="navigation__inner">
+                <ul class="navigation__inner-list">
+                    {{#each navAcademy}}
+                        <li>
+                            <a class="navigation__inner-item" href="#">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="navigation__post" href="#">
+                    <div class="navigation__post-content">
+                        <ul class="navigation__tags">
+                            <li>
+                                <span class="navigation__tags-time">12 сентября 11:00</span>
+                                <span class="navigation__tags-category">Онлайн</span>
+                            </li>
+                        </ul>
+                        <div class="navigation__post-text">
+                            <p>
+                                В России презентовали смартфон HUAWEI nova 9 — подробности, цена и дата выхода
+                            </p>
+                        </div>
+                    </div>
+                    <div class="navigation__post-img navigation__post-img--captioned">
+                        <img src="img/navigation-2.jpg" alt="Фото поста">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="container">
+            <div class="navigation__inner">
+                <ul class="navigation__inner-list">
+                    {{#each about}}
+                        <li>
+                            <a class="navigation__inner-item" href="#">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="navigation__post" href="#">
+                    <div class="navigation__post-content">
+                        <ul class="navigation__tags">
+                            <li>
+                                <span class="navigation__tags-time">21 сентября 2021</span>
+                                <span class="navigation__tags-category">Новость</span>
+                            </li>
+                        </ul>
+                        <div class="navigation__post-text">
+                            <p>
+                                Кейс по оснащению иммерсивного центра Infinity des Lumières проекторами Barco
+                            </p>
+                        </div>
+                    </div>
+                    <div class="navigation__post-img">
+                        <img src="img/navigation-3.jpg" alt="Фото поста">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="container">
+            <div class="navigation__inner">
+                <ul class="navigation__inner-list">
+                    {{#each partner}}
+                        <li>
+                            <a class="navigation__inner-item" href="#">{{this}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+                <a class="navigation__post" href="#">
+                    <div class="navigation__post-content">
+                        <ul class="navigation__tags">
+                            <li>
+                                <span class="navigation__tags-time">2020</span>
+                                <span class="navigation__tags-category">Новость</span>
+                            </li>
+                        </ul>
+                        <div class="navigation__post-text">
+                            <p>
+                                Венецианская биеннале AUVIX и Barco
+                            </p>
+                        </div>
+                    </div>
+                    <div class="navigation__post-img">
+                        <img src="img/navigation-4.jpg" alt="Фото поста">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </li>
+</ul>

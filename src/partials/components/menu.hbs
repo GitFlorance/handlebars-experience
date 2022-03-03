@@ -1,0 +1,24 @@
+{{#if menu}}
+
+<nav class="menu">
+  <ul class="menu__list">
+    {{#each menu}}
+    <li class="menu__item">
+      <a class="menu__link {{#if this.active}}active{{/if}}" href="{{this.link}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>
+
+{{else}}
+<pre>
+  Добавить в файл json:
+  "menu": [
+    {
+      "name": "",
+      "link": "",
+      "active": ""
+    }
+  ]
+</pre>
+{{/if}}

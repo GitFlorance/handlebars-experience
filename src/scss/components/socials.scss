@@ -1,0 +1,42 @@
+#youtube-icon-rectangle {
+    fill: var(--youtube-icon-color);
+    stroke: var(--youtube-icon-color);
+  
+    transition: fill $base-transition-time $base-transition-easing, stroke $base-transition-time $base-transition-easing;
+  }
+  
+  #youtube-icon-border {
+    fill: none;
+    stroke: var(--youtube-icon-color);
+  
+    transition: stroke $base-transition-time $base-transition-easing;
+  }
+  
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.7rem;
+    row-gap: 0.4rem;
+  
+    &__item {
+      
+    }
+  
+    &__item-link {
+  
+      &:hover svg,
+      &:focus-visible svg {
+        fill: var(--white);
+        --youtube-icon-color: var(--white);
+      }
+  
+      svg {
+        width: 2rem;
+        height: 2rem;
+  
+        transition: fill $base-transition-time $base-transition-easing;
+  
+        fill: var(--primary-color);
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+.menu {
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      gap: 1rem;
+    }
+  
+    &__item {
+  
+    }
+  
+    &__link {
+      transition: color $base-transition-time $base-transition-easing, border-bottom-color $base-transition-time $base-transition-easing;
+  
+      &:hover {
+        color: var(--primary-color);
+      }
+  
+      &.active {
+        border-bottom: solid 1px var(--text-color);
+      }
+  
+      &.active:hover {
+        border-bottom-color: var(--primary-color);
+      }
+    }
+  }
